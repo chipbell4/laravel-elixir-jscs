@@ -1,0 +1,31 @@
+{
+  "name": "laravel-elixir-jscs",
+  "version": "1.0.0",
+  "description": "Laravel Elixir JSCS Extension",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-jscs": "^1.6.0",
+    "laravel-elixir": "^2.3.12",
+    "gulp-notify": "^2.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chipbell4/laravel-elixir-jscs.git"
+  },
+  "keywords": [
+    "laravel",
+    "elixir",
+    "jscs",
+    "gulp"
+  ],
+  "author": "Chip Bell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chipbell4/laravel-elixir-jscs/issues"
+  },
+  "homepage": "https://github.com/chipbell4/laravel-elixir-jscs"
+}
