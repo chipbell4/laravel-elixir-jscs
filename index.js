@@ -20,31 +20,10 @@ elixir.extend('jscs', function(src, options) {
     // default options
     options = options || {};
 
-    // Callback for an error occurring
-    var onError = function(err) {
-        // Notify the user
-        notify.onError({
-            title: 'Laravel Elixir',
-            subtitle: 'JSCS Failed',
-            message: '<%= error.message %>',
-            icon: path.join(__dirname, '../laravel-elixir/icons/fail.png')
-        })(err);
-
-        // end the stream
-        this.emit('end');
-    };
-
     // Setup the task
     gulp.task('jscs', function() {
         return gulp.src(files)
             .pipe(jscs(options))
-            .on('error', onError)
-            .pipe(notify({
-                title: 'Laravel Elixir',
-                message: 'JSCS passed',
-                icon: path.join(__dirname, '../laravel-elixir/icons/pass.png'),
-                onLast: true
-            }));
     });
 
     // register the task to actually run via elixir
