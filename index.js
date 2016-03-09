@@ -24,7 +24,10 @@ elixir.extend('jscs', function(src, options) {
 
         // Setup the task
         return gulp.task('jscs', function() {
-            return gulp.src(files).pipe(jscs(options));
+
+            return gulp.src(files)
+                .pipe(jscs(options))
+                .pipe(jscs.reporter());
         });
     });
 });
