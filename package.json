@@ -1,5 +1,5 @@
 {
-  "name": "laravel-elixir-jscs",
+  "name": "laravel-elixir-jscs-wrapper",
   "version": "2.0.0",
   "description": "Laravel Elixir JSCS Extension",
   "main": "index.js",
