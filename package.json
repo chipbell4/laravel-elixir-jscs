@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/chipbell4/laravel-elixir-jscs.git"
+    "url": "https://github.com/NicolasPio/laravel-elixir-jscs-wrapper"
   },
   "keywords": [
     "laravel",
@@ -22,10 +22,10 @@
     "jscs",
     "gulp"
   ],
-  "author": "Chip Bell",
+  "author": "Nicolas Pio",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/chipbell4/laravel-elixir-jscs/issues"
+    "url": "https://github.com/NicolasPio/laravel-elixir-jscs-wrapper/issues"
   },
-  "homepage": "https://github.com/chipbell4/laravel-elixir-jscs"
+  "homepage": "https://github.com/NicolasPio/laravel-elixir-jscs-wrapper"
 }
