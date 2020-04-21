@@ -20,13 +20,14 @@ elixir.extend('jscs', function(src, options) {
     // default options
     options = options || {};
 
-    // Setup the task
-    gulp.task('jscs', function() {
-        return gulp.src(files)
-            .pipe(jscs(options))
-    });
+    new elixir.Task('jscs', function () {
 
-    // register the task to actually run via elixir
-    this.registerWatcher('jscs', files);
-    return this.queueTask('jscs');
+        // Setup the task
+        return gulp.task('jscs', function() {
+
+            return gulp.src(files)
+                .pipe(jscs(options))
+                .pipe(jscs.reporter());
+        });
+    });
 });

@@ -1,20 +1,23 @@
 {
-  "name": "laravel-elixir-jscs",
-  "version": "1.0.0",
+  "name": "laravel-elixir-jscs-wrapper",
+  "version": "2.0.0",
   "description": "Laravel Elixir JSCS Extension",
   "main": "index.js",
   "dependencies": {
-    "gulp-jscs": "^1.6.0",
-    "laravel-elixir": "^2.3.12",
-    "gulp-notify": "^2.2.0"
+    "gulp-jscs": "2.0.0",
+    "laravel-elixir": "4.0.1",
+    "gulp-notify": "^2.2.0",
+    "snyk": "^1.234.0"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/chipbell4/laravel-elixir-jscs.git"
+    "url": "https://github.com/NicolasPio/laravel-elixir-jscs-wrapper"
   },
   "keywords": [
     "laravel",
@@ -22,10 +25,11 @@
     "jscs",
     "gulp"
   ],
-  "author": "Chip Bell",
+  "author": "Nicolas Pio",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/chipbell4/laravel-elixir-jscs/issues"
+    "url": "https://github.com/NicolasPio/laravel-elixir-jscs-wrapper/issues"
   },
-  "homepage": "https://github.com/chipbell4/laravel-elixir-jscs"
+  "homepage": "https://github.com/NicolasPio/laravel-elixir-jscs-wrapper",
+  "snyk": true
 }

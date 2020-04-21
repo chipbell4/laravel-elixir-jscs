@@ -1,0 +1,63 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  'npm:shell-quote:20160621':
+    - laravel-elixir > browserify > shell-quote:
+        reason: None given
+        expires: '2016-10-01T19:17:18.705Z'
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:minimatch:20160620':
+    - laravel-elixir > browserify > glob > minimatch:
+        patched: '2016-09-01T19:17:18.824Z'
+    - laravel-elixir > gulp-phpunit > gulp > vinyl-fs > glob-stream > minimatch:
+        patched: '2016-09-01T19:17:18.824Z'
+    - laravel-elixir > gulp-phpunit > gulp > vinyl-fs > glob-stream > glob > minimatch:
+        patched: '2016-09-01T19:17:18.824Z'
+    - laravel-elixir > gulp-if > gulp-match > minimatch:
+        patched: '2016-09-01T19:17:18.824Z'
+    - laravel-elixir > gulp-phpunit > gulp > vinyl-fs > glob-watcher > gaze > globule > minimatch:
+        patched: '2016-09-01T19:17:18.824Z'
+    - laravel-elixir > gulp-phpunit > gulp > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
+        patched: '2016-09-01T19:17:18.824Z'
+  'npm:ms:20170412':
+    - laravel-elixir > browser-sync > serve-static > send > ms:
+        patched: '2017-05-25T03:56:22.137Z'
+    - laravel-elixir > browser-sync > connect > debug > ms:
+        patched: '2017-05-25T03:56:22.137Z'
+    - laravel-elixir > browser-sync > serve-index > debug > ms:
+        patched: '2017-05-25T03:56:22.137Z'
+    - laravel-elixir > browser-sync > localtunnel > debug > ms:
+        patched: '2017-05-25T03:56:22.137Z'
+    - laravel-elixir > browser-sync > socket.io > socket.io-parser > debug > ms:
+        patched: '2017-05-25T03:56:22.137Z'
+    - laravel-elixir > browser-sync > socket.io-client > socket.io-parser > debug > ms:
+        patched: '2017-05-25T03:56:22.137Z'
+    - laravel-elixir > browser-sync > socket.io > socket.io-client > socket.io-parser > debug > ms:
+        patched: '2017-05-25T03:56:22.137Z'
+    - laravel-elixir > browser-sync > socket.io > socket.io-adapter > socket.io-parser > debug > ms:
+        patched: '2017-05-25T03:56:22.137Z'
+    - laravel-elixir > browser-sync > connect > finalhandler > debug > ms:
+        patched: '2017-05-25T03:56:22.137Z'
+    - laravel-elixir > browser-sync > socket.io > debug > ms:
+        patched: '2017-05-25T03:56:22.137Z'
+    - laravel-elixir > browser-sync > socket.io > engine.io > debug > ms:
+        patched: '2017-05-25T03:56:22.137Z'
+    - laravel-elixir > browser-sync > socket.io > socket.io-adapter > debug > ms:
+        patched: '2017-05-25T03:56:22.137Z'
+    - laravel-elixir > browser-sync > socket.io-client > debug > ms:
+        patched: '2017-05-25T03:56:22.137Z'
+    - laravel-elixir > browser-sync > socket.io > socket.io-client > debug > ms:
+        patched: '2017-05-25T03:56:22.137Z'
+    - laravel-elixir > browser-sync > socket.io-client > engine.io-client > debug > ms:
+        patched: '2017-05-25T03:56:22.137Z'
+    - laravel-elixir > browser-sync > socket.io > socket.io-client > engine.io-client > debug > ms:
+        patched: '2017-05-25T03:56:22.137Z'
+    - laravel-elixir > browser-sync > serve-static > send > debug > ms:
+        patched: '2017-05-25T03:56:22.137Z'
+  SNYK-JS-HTTPSPROXYAGENT-469131:
+    - snyk > proxy-agent > https-proxy-agent:
+        patched: '2019-10-10T02:13:47.742Z'
+    - snyk > proxy-agent > pac-proxy-agent > https-proxy-agent:
+        patched: '2019-10-10T02:13:47.742Z'
